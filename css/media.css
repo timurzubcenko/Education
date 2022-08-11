@@ -1,0 +1,360 @@
+@media (max-width:1200px) {
+    .info_header .items {
+        gap: 75px;
+    }
+}
+
+@media (max-width:992px) {
+    .info_header {
+        display: block;
+    }
+
+    .info_header .items {
+        gap: 0px;
+        padding: 55px 40px;
+        margin-top: 0;
+    }
+
+    .header_list {
+        gap: 22.5px;
+    }
+
+    .main_btn {
+        gap: 25px;
+    }
+
+    .interior_section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .interior_section img {
+        min-width: 100%;
+    }
+
+    .txt_sec {
+        order: 1;
+    }
+
+    .txt_sec h2 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .interior_section_bottom .items {
+        gap: 25px;
+    }
+
+    .interior_section_2 .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interior_sec_6 .card.first,
+    .interior_sec_6 .card.second {
+        display: none;
+    }
+
+    .interior_sec_7 {
+        padding: 50px 100px;
+    }
+
+    .interior_footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width:870px) {
+
+    .interior_section_3 .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interior_section_3_2 .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .interior_sec_5 .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:768px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before,
+    .header_burger:after {
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before {
+        top: 0;
+    }
+
+    .header_burger:after {
+        bottom: 0;
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        text-align: center;
+        transition: all 0.3s ease 0s;
+        overflow-x: auto;
+    }
+
+    .header_menu.active {
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+        margin: 120px 0 0 0;
+    }
+
+    .header_list li {
+        margin-bottom: 20px;
+    }
+
+    .top_head ul {
+        gap: 50px;
+    }
+
+    .top_head ul li a {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 51px;
+        /* identical to box height */
+
+
+        color: #828282;
+    }
+
+    .info_header .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .interior_section_bottom .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interior_section_2 .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .interior_sec_7 {
+        padding: 25px 50px;
+    }
+
+    .interior_footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature_links ul {
+        align-items: center;
+    }
+
+    .support ul {
+        align-items: center;
+    }
+}
+
+@media (max-width:475px) {
+    .input {
+        display: block;
+    }
+}
+
+@media (max-width:425px) {
+
+    .txt_bottom_header h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .info_header .item {
+        flex-direction: column;
+    }
+
+    .main_btn {
+        display: none;
+    }
+
+    .main_btn_menu {
+        display: inline-block;
+    }
+
+    .btn_menu {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 155%;
+        /* identical to box height, or 25px */
+
+
+        color: #222222;
+        cursor: pointer;
+    }
+
+    .btn_blue_menu {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+
+        color: #FFFFFF;
+        background: #086CF9;
+        border-radius: 4px;
+        padding: 12px 24px;
+        cursor: pointer;
+    }
+
+    .info_header .txt_item {
+        text-align: center;
+    }
+
+    .txt_sec h2 {
+        font-size: 30px;
+    }
+
+    .interior_section_bottom .items {
+        grid-template-columns: 1fr;
+    }
+
+    .txt_sec_bottom h2 {
+        font-size: 40px;
+    }
+
+    .txt_sec_2 h2 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .title_sec_3 h2 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .txt_card_2 {
+        font-size: 10px;
+    }
+
+    .title_sec_5 h2 {
+        font-size: 34px;
+    }
+
+    .slider {
+        gap: 16px;
+    }
+
+    .author {
+        gap: 8px;
+    }
+
+    .txt_autor h4 {
+        font-size: 16px;
+    }
+
+    .txt_autor p {
+        font-size: 10px;
+    }
+
+    .img_autor {}
+}
+
+@media (max-width:320px) {
+
+    body {
+        min-width: 320px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .interior_section_2 .card .info_card {
+        display: none;
+    }
+
+    .title_card h3 {
+        font-size: 18px;
+    }
+
+    .title_card h4 {
+        font-size: 18px;
+    }
+
+    .txt_card_2 .user {
+        display: none;
+    }
+
+    .info_txt_card {
+        display: none;
+    }
+
+    .btn_slider,
+    .btn_slider_2 {
+        display: none;
+    }
+}
